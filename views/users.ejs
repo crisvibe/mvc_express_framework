@@ -1,0 +1,9 @@
+<% if(typeof allUsers !== 'undefined') { %>
+  <% for (const [key, value] of Object.entries(allUsers)) { %>
+    <li><%= value %></li>
+  <% } %>
+<% } else if (user) { %>
+  <%= user %>
+<% } else { %>
+  <p>Couldn't find user</p>
+<% } %>
